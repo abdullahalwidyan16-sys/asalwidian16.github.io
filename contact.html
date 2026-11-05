@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me | 180368 Abdullah Alwidyan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <span class="brand">Abdullah Alwidyan</span>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="block narrow">
+      <h1>Contact Me</h1>
+      <p class="lead-small">Send a message and fill in all fields.</p>
+
+      <form id="contactForm" novalidate>
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name">
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">Select your country</option>
+          <option>Jordan</option>
+          <option>Saudi Arabia</option>
+          <option>United Arab Emirates</option>
+          <option>Kuwait</option>
+          <option>Qatar</option>
+          <option>Bahrain</option>
+          <option>Oman</option>
+          <option>Iraq</option>
+          <option>Syria</option>
+          <option>Lebanon</option>
+          <option>Palestine</option>
+          <option>Egypt</option>
+          <option>Morocco</option>
+          <option>Tunisia</option>
+          <option>Algeria</option>
+          <option>Turkey</option>
+          <option>United Kingdom</option>
+          <option>United States</option>
+          <option>Canada</option>
+          <option>Germany</option>
+          <option>France</option>
+          <option>Other</option>
+        </select>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Write your message"></textarea>
+
+        <p id="formError" class="error" role="alert"></p>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Abdullah Alwidyan &middot; 180368</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
